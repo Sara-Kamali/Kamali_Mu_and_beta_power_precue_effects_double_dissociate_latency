@@ -78,6 +78,12 @@ set(gca, 'fontsize', 32, 'fontweight', 'bold');
 
 % Save the figure with high resolution
 output_path = 'path to save plot';
+
+%%_____________________________________________________________________________________________________________________
+%% The violinplot code is adopted from: 
+% Copyright (c) 2016, Bastian Bechtold
+% This code is released under the terms of the BSD 3-clause license
+% https://github.com/bastibe/Violinplot-Matlab
 cd(output_path);
 print('emg_times_comparison_violin.png', '-dpng', '-r500');
 
