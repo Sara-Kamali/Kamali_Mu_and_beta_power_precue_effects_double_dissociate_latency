@@ -11,11 +11,6 @@ addpath(files_path);
 % Define study parameters and frequency bands
 subjects = [3, 4, 5, 9, 13, 14, 19, 22, 23, 25, 27, 30, 35, 36, 46, 48, 49, 50, 52];
 nsubj = length(subjects);
-frq_bands = {7:14, 15:28, 30:40, 7:40}; % Frequency ranges
-band_names = {'mu', 'beta', 'gamma', '7 to 40 Hz'};
-clusters_name = {'Right VA', 'Left MotorSensory', 'Visual', 'Right MotorSensory', 'Left VA'};
-num_frq = length(frq_bands);
-
 % Thresholds for categorizing trials and subjects
 p30 = 30; p70 = 70; % Percentile thresholds
 
