@@ -2,14 +2,12 @@
 % within the 20 to 256 Hz range for selected subjects.
 
 % Set paths for data and code dependencies
-files_path = 'C:\Users\SARA\Documents\MATLAB_files\data\Motor\EEG_files_new\ans';
+files_path = 'path to data';
 cd(files_path);
 
 % Add EEGLAB and other required paths
-eeglab_path = 'C:\Users\SARA\Documents\MATLAB_files\codes\eeglab2022.1';
+eeglab_path = 'path to EEGlab';
 addpath(eeglab_path); eeglab; close;
-addpath('C:\Users\SARA\Documents\MATLAB_files\codes\course\statistics');
-addpath('C:\Users\SARA\Documents\MATLAB_files\codes\KFD for motor data');
 
 % Define subjects and study parameters
 subjects = [3, 4, 5, 9, 13, 14, 19, 22, 23, 25, 27, 30, 35, 36, 46, 48, 49, 50, 52];
