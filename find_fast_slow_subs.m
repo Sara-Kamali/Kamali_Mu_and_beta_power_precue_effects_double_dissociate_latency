@@ -5,9 +5,8 @@ clear all; clc;
 set(groot, 'DefaultAxesFontSize', 14, 'DefaultLineLineWidth', 2, 'DefaultTextFontSize', 14);
 
 % Define paths for files and data
-files_path = 'C:\Users\SARA\Documents\MATLAB_files\data\Motor\EEG_files_new';
+files_path = 'path to data';
 addpath(files_path);
-addpath('C:\Users\SARA\Documents\MATLAB_files\codes');
 
 % Define study parameters and frequency bands
 subjects = [3, 4, 5, 9, 13, 14, 19, 22, 23, 25, 27, 30, 35, 36, 46, 48, 49, 50, 52];
