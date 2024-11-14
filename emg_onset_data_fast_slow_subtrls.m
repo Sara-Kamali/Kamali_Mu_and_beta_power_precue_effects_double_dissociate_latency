@@ -2,7 +2,6 @@
 % for trait and state-based analysis, and generates a violin plot.
 
 clc; clear;
-
 % Set default plot properties
 set(groot, 'DefaultAxesFontSize', 14, 'DefaultLineLineWidth', 2, 'DefaultTextFontSize', 14);
 
