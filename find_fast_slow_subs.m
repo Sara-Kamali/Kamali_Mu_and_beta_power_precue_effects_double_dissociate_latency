@@ -1,7 +1,7 @@
 % This code identifies fast and slow EMG trials and subjects based on EMG onset times.
 clear all; clc;
 
-%% Set default plot values
+% Set default plot values
 set(groot, 'DefaultAxesFontSize', 14, 'DefaultLineLineWidth', 2, 'DefaultTextFontSize', 14);
 
 % Define paths for files and data
