@@ -1,4 +1,4 @@
-% This code performs single trial time-frequency decomposition on bipolar EMG signals
+% This code performs single-trial time-frequency decomposition on bipolar EMG signals
 % within the 20 to 256 Hz range for selected subjects.
 
 % Set paths for data and code dependencies
@@ -22,10 +22,8 @@ for current_subj = 1:nsubj
     subj = subjects(current_subj);
     
     % Set file names for current subject's EMG and EEG data
-    ersp_file_name = {
-        sprintf('emg_singletrl_s%02d.mat', subj), ...
-        sprintf('emg_singletrl_s%02d_high.mat', subj)
-    };
+    ersp_file_name = {sprintf('emg_singletrl_s%02d.mat', subj), ...
+        sprintf('emg_singletrl_s%02d_high.mat', subj)};
     
     % Define subject-specific directory and move to it
     eeg_file_dir = fullfile('C:\Users\SARA\Documents\MATLAB_files\data\Motor\EEG_files_new', sprintf('s%02d', subj));
