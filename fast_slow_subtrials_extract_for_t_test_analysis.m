@@ -1,10 +1,9 @@
-% This code creates a balanced pool of ERSP of single trials for the fast and slow subjects 
+% This code creates a balanced pool of single trials power for the fast and slow subjects 
 % and trials for t-tests.
 clc; clear;
 
 % Set default plot properties
 set(groot, 'DefaultAxesFontSize', 14, 'DefaultLineLineWidth', 2, 'DefaultTextFontSize', 14);
-
 % Define paths
 file_path = 'data path';
 addpath(file_path);
