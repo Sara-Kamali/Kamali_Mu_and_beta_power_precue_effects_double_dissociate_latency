@@ -42,10 +42,10 @@ end
 
 %% Loop over mu and beta bands and conditions (trait and state-based)
 % to perform significance testing for each cluster
-for band = 1%:2
-    for mod = 1%:2 % for trait (fast/slow subject) and state (fast/slow trials) groups
+for band = 1:2
+    for mod = 1:2 % for trait (fast/slow subject) and state (fast/slow trials) groups
         h1 = figure; h1.WindowState = 'maximized';
-        for cls = 2%1:num_cls
+        for cls = 1:num_cls
             % Retrieve fast and slow power
             if mod == 1
                 fast_data = squeeze(fs_groups_ersp(main_cls(cls)).fastSubs(band, :, :));
