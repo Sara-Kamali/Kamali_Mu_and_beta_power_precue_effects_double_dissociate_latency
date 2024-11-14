@@ -4,7 +4,6 @@
 % all the subjects contributed an equal number of trials to the analysis.
 
 clearvars; clc;
-
 %% Set default plot properties
 set(groot, 'DefaultAxesFontSize', 14, 'DefaultLineLineWidth', 2, 'DefaultTextFontSize', 14);
 
