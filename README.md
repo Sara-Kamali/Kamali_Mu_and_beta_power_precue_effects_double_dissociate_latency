@@ -57,6 +57,6 @@ To form the trait and state fast and slow groups based on latencies and generate
 To perform cluster-based permutation t-tests and FDR correction and generate results presented in Figures 6 to 8, use the following codes:
 
 - **Function to perform cluster-based permutation t-test**: `permutation_test_on_clusters.m`
-- **Cluster-based test of EEG data over brain areas**: `cluster_based_permutation_test_fast_slow_subjects_trials.m`
-- **Cluster-based test of EMG data**: `cluster_based_permutation_test_fast_slow_subjects_trials_EMG.m`
+- **Cluster-based test and FDR correction for EEG data over brain areas**: `cluster_based_permutation_test_fast_slow_subjects_trials.m`
+- **Cluster-based test and FDR correction for EMG data**: `cluster_based_permutation_test_fast_slow_subjects_trials_EMG.m`
 - **Function to plot the IQR shades**: `shade.m`
