@@ -1,5 +1,5 @@
 [readme_muandbeta.pdf](https://github.com/user-attachments/files/17970055/readme_muandbeta.pdf)
-1 Introduction
+**1 Introduction++
 This respiratory belongs to the codes for analysis and generating plots for: Kamali S, Baroni F, Varona P. Mu and beta power effects of fast response trait double dissociate during precue and movement execution in the senso- rimotor cortex. bioRxiv. 2024:2024-11. doi: 10.1101/2024.11.11.621252 Using any of these codes or materials requires authors’ permission, to refer to the results, please cite the work as listed above.
 All the codes are in Matlab.
 2 Dataset
