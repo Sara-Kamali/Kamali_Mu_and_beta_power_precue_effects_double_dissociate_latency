@@ -34,10 +34,10 @@ The codes to perform the preprocessing pipeline, shown in Figure 2 are:
 
 To generate the STUDY for group-level analysis and perform clustering on brain dipoles and get the results in Figures 3 and 4, use the following codes:
 
-- **Create STUDY: `study_generator.m`
-- **Import the STUDY into EEGlab GUI. Set the parameters for the ERSP, ERP, and spectrum fields manually.
-- **Perform the pre-clustering calculations by adjusting the weights as recommended in the paper’s section 2.5 and select the ICs as recommended.
-- **Get the subjects and ICs’ indexes from the study: `cluster_info_gen.m`
+- Create STUDY: `study_generator.m`
+- Import the STUDY into EEGlab GUI. Set the parameters for the ERSP, ERP, and spectrum fields manually.
+- Perform the pre-clustering calculations by adjusting the weights as recommended in the paper’s section 2.5 and select the ICs as recommended.
+- Get the subjects and ICs’ indexes from the study: `cluster_info_gen.m`
 
 ---
 
