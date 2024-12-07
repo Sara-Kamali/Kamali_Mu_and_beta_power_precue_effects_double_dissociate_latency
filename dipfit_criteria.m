@@ -5,7 +5,7 @@ function EEG_out = dipfit_criteria(EEG_in, prob_trshld, RV_trshld)
 
 
 EEG_out = EEG_in;
-EEG_out.etc.good_components = struct; % Initialize new field
+EEG_out.components_to_cluster = struct; % Initialize new field
 good_components = [];
 brain_components = [];
 
