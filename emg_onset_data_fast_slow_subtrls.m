@@ -77,6 +77,52 @@ set(gca, 'fontsize', 32, 'fontweight', 'bold');
 
 % Save the figure with high resolution
 output_path = 'path to save plot';
+%________________________________________________________
+% Instead of padding NaN, we can also plot with group labels:
+% Stack all your EMG‐onset times into one long column vector
+% 1) stack your data and labels
+all_emg = [ fast_subs_emgt(:)
+            slow_subs_emgt(:)
+            fast_trls_emgt(:)
+            slow_trls_emgt(:) ];
+
+grp = [ repmat("Fast Subjects", numel(fast_subs_emgt),1)
+        repmat("Slow Subjects", numel(slow_subs_emgt),1)
+        repmat("Fast Trials",   numel(fast_trls_emgt),1)
+        repmat("Slow Trials",   numel(slow_trls_emgt),1) ];
+
+% 2) specify the exact plotting order
+order = { "Fast Subjects", "Slow Subjects", "Fast Trials", "Slow Trials" };
+
+% 3) call violinplot with GroupOrder
+h = figure; h.WindowState = 'maximized';
+v = violinplot(all_emg, grp);
+
+% 4) re-apply your colors in that same order
+color_mat = [ 1,0,0;    % red
+    1,0.3,0.5; % magenta
+    0.2,0.2,1; % blue
+    0.5,0.2,1  % purple
+    ];
+
+for i = 1:numel(v)
+    v(i).ViolinColor = { color_mat(i,:) };
+    v(i).ViolinAlpha = { 0.2 };
+    v(i).EdgeColor   = color_mat(i,:);
+    v(i).ShowData    = true;
+end
+
+
+
+% Set plot labels and title
+yticks(2.2:0.2:3.8);
+ylabel('Single-trial EMG onset time (s)');
+title('Violin Plot of EMG Onset Times for Fast and Slow Categories');
+set(gca, 'fontsize', 32, 'fontweight', 'bold');
+
+% Save the figure 
+
+
 
 %%_____________________________________________________________________________________________________________________
 %% The violinplot code is adopted from: 
